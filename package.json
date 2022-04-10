@@ -1,0 +1,24 @@
+{
+  "name": "node-rics",
+  "version": "1.0.0",
+  "description": "Actieve - Node Library for Rics Access",
+  "main": "dist/node-rics.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "Smpl",
+    "Actieve",
+    "Rics"
+  ],
+  "author": "Actieve",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
