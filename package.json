@@ -1,6 +1,6 @@
 {
   "name": "node-rics",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Actieve - Node Library for Rics Access",
   "main": "dist/node-rics.js",
   "type": "commonjs",
@@ -20,5 +20,9 @@
   },
   "dependencies": {
     "request": "^2.88.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/actieve/node-rics.git"
   }
 }
