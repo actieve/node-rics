@@ -1,0 +1,1387 @@
+{
+	"info": {
+		"_postman_id": "7da06f0d-139b-419e-89d6-3a141f1a7f11",
+		"name": "Rics Enterprise API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1134395"
+	},
+	"item": [
+		{
+			"name": "AR Customer",
+			"item": [
+				{
+					"name": "Get AR Credit Limit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomerId\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/ARCustomer/GetArCustomerCreditLimit",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"ARCustomer",
+								"GetArCustomerCreditLimit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SKU\": null,\r\n  \"Brand\": null,\r\n  \"Style\": null,\r\n  \"SupplierCode\": null,\r\n  \"Supplier\": null,\r\n  \"SupplierSKU\": null,\r\n  \"Summary\": null,\r\n  \"Colors\": null,\r\n  \"Classes\": null,\r\n  \"ProductCustomEntries\": null,\r\n  \"StoreCode\": null,\r\n  \"MinOnHand\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Product/GetProduct",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Product",
+								"GetProduct"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Custom Entry",
+			"item": [
+				{
+					"name": "Get Custom Entry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomEntryTypes\": null,\r\n  \"TagTypes\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/CustomEntry/GetCustomEntry",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"CustomEntry",
+								"GetCustomEntry"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomerId\": null,\r\n  \"AccountNumber\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"Email\": null,\r\n  \"PhoneNumber\": null,\r\n  \"DateOfBirthStart\": null,\r\n  \"DateOfBirthEnd\": null,\r\n  \"StoreCode\": null,\r\n  \"Address\": null,\r\n  \"City\": null,\r\n  \"State\": null,\r\n  \"PostalCode\": null,\r\n  \"CountryCode\": null,\r\n  \"CustomEntries\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Customer/GetCustomer",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customer",
+								"GetCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer Details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomerId\": null,\r\n  \"AccountNumber\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"Email\": null,\r\n  \"Gender\": null,\r\n  \"PhoneNumber\": null,\r\n  \"DateOfBirthStart\": null,\r\n  \"DateOfBirthEnd\": null,\r\n  \"Address\": null,\r\n  \"City\": null,\r\n  \"State\": null,\r\n  \"PostalCode\": null,\r\n  \"CountryCode\": null,\r\n  \"CustomEntries\": null,\r\n  \"CreatedStart\": null,\r\n  \"CreatedEnd\": null,\r\n  \"ModifiedStart\": null,\r\n  \"ModifiedEnd\": null,\r\n  \"RelatedAccountNumber\": null,\r\n  \"RelationshipType\": null,\r\n  \"RelatedFirstName\": null,\r\n  \"RelatedLastName\": null,\r\n  \"RelatedDateOfBirthStart\": null,\r\n  \"RelatedDateOfBirthEnd\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Customer/GetCustomerDetails",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customer",
+								"GetCustomerDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer Purchase History",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomerId\": null,\r\n  \"Take\": null,\r\n  \"Skip\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Customer/GetCustomerPurchaseHistory",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customer",
+								"GetCustomerPurchaseHistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Customer\": {\r\n    \"CustomerId\": null,\r\n    \"AccountNumber\": null,\r\n    \"FirstName\": null,\r\n    \"LastName\": null,\r\n    \"Email\": null,\r\n    \"PhoneNumber\": null,\r\n    \"DateOfBirth\": null,\r\n    \"Salutation\": null,\r\n    \"MiddleInitial\": null,\r\n    \"Suffix\": null,\r\n    \"Gender\": null,\r\n    \"Alert\": null,\r\n    \"CreditLimit\": null,\r\n    \"ChargeBalance\": null,\r\n    \"StoreCredit\": null,\r\n    \"TaxExemptId\": null,\r\n    \"IsTaxExempt\": null,\r\n    \"StopPromptForFBPEnroll\": null,\r\n    \"Comments\": null,\r\n    \"EmailReceipt\": null,\r\n    \"IsBouncedEmail\": null,\r\n    \"IsUnsubscribed\": null,\r\n    \"ARPostToId\": null,\r\n    \"CustomEntries\": null,\r\n    \"MailingAddress\": {\r\n      \"Addressee\": null,\r\n      \"Address\": null,\r\n      \"City\": null,\r\n      \"State\": null,\r\n      \"PostalCode\": null,\r\n      \"CountryCode\": null\r\n    },\r\n    \"BillingAddress\": {\r\n      \"Addressee\": null,\r\n      \"Address\": null,\r\n      \"City\": null,\r\n      \"State\": null,\r\n      \"PostalCode\": null,\r\n      \"CountryCode\": null\r\n    }\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Customer/SaveCustomer",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Customer",
+								"SaveCustomer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discount",
+			"item": [
+				{
+					"name": "Get Discount Reason",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Discount/GetDiscountReason",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Discount",
+								"GetDiscountReason"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Frequent Buyer",
+			"item": [
+				{
+					"name": "Get Frequent Buyer Rewards",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomerId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/FrequentBuyer/GetFrequentBuyerRewards",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"FrequentBuyer",
+								"GetFrequentBuyerRewards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Frequent Buyer Activity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"AccountNumber\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"Email\": null,\r\n  \"Gender\": null,\r\n  \"PhoneNumber\": null,\r\n  \"DateOfBirthStart\": null,\r\n  \"DateOfBirthEnd\": null,\r\n  \"Address\": null,\r\n  \"City\": null,\r\n  \"State\": null,\r\n  \"PostalCode\": null,\r\n  \"CountryCode\": null,\r\n  \"CustomEntries\": null,\r\n  \"FBPlanName\": null,\r\n  \"StoreCode\": null,\r\n  \"Summary\": null,\r\n  \"DollarsAccumulated\": null,\r\n  \"QuantityAccumulated\": null,\r\n  \"OutstandingReward\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/FrequentBuyer/GetFrequentBuyerActivity",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"FrequentBuyer",
+								"GetFrequentBuyerActivity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gift Card",
+			"item": [
+				{
+					"name": "Get Gift Card By Id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"GiftCardId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/GiftCard/GetGiftCardById",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"GiftCard",
+								"GetGiftCardById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Gift Card By Number",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"GiftCardNumber\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/GiftCard/GetGiftCardByNumber",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"GiftCard",
+								"GetGiftCardByNumber"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Gift Card Transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"AccountNumber\": null,\r\n  \"FirstName\": null,\r\n  \"LastName\": null,\r\n  \"Email\": null,\r\n  \"Gender\": null,\r\n  \"PhoneNumber\": null,\r\n  \"DateOfBirthStart\": null,\r\n  \"DateOfBirthEnd\": null,\r\n  \"Address\": null,\r\n  \"City\": null,\r\n  \"State\": null,\r\n  \"PostalCode\": null,\r\n  \"CountryCode\": null,\r\n  \"CustomEntries\": null,\r\n  \"CardNumber\": null,\r\n  \"CardValue\": null,\r\n  \"CreatedStart\": null,\r\n  \"CreatedEnd\": null,\r\n  \"DeletedStart\": null,\r\n  \"DeletedEnd\": null,\r\n  \"StoreCode\": null,\r\n  \"Change\": null,\r\n  \"ChangeType\": null,\r\n  \"ChangeDateStart\": null,\r\n  \"ChangeDateEnd\": null,\r\n  \"TicketNumber\": null,\r\n  \"CashierCode\": null,\r\n  \"CashierLogin\": null,\r\n  \"CashierUserName\": null,\r\n  \"SalesPersonCode\": null,\r\n  \"SalesPersonLogin\": null,\r\n  \"SalesPersonUserName\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/GiftCard/GetGiftCardTransaction",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"GiftCard",
+								"GetGiftCardTransaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Gift Card",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"GiftCard\": {\r\n    \"GiftCardId\": null,\r\n    \"CardNumber\": null,\r\n    \"CardValue\": null,\r\n    \"StartDate\": null,\r\n    \"EndDate\": null,\r\n    \"IsStoredValue\": null\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/GiftCard/SaveGiftCard",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"GiftCard",
+								"SaveGiftCard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inventory",
+			"item": [
+				{
+					"name": "Get Inventory On Hand",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SKU\": null,\r\n  \"Column\": null,\r\n  \"Row\": null,\r\n  \"Brand\": null,\r\n  \"UPC\": null,\r\n  \"Style\": null,\r\n  \"SupplierCode\": null,\r\n  \"Supplier\": null,\r\n  \"SupplierSKU\": null,\r\n  \"IsSellableOnline\": null,\r\n  \"Summary\": null,\r\n  \"Colors\": null,\r\n  \"Classes\": null,\r\n  \"ProductCustomEntries\": null,\r\n  \"StoreCode\": null,\r\n  \"MaxOnHand\": null,\r\n  \"MinOnHand\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Inventory/GetInventoryOnHand",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Inventory",
+								"GetInventoryOnHand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Inventory Transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TransactionStart\": null,\r\n  \"TransactionEnd\": null,\r\n  \"StoreCode\": null,\r\n  \"SKU\": null,\r\n  \"Column\": null,\r\n  \"Row\": null,\r\n  \"Brand\": null,\r\n  \"UPC\": null,\r\n  \"Style\": null,\r\n  \"SupplierCode\": null,\r\n  \"Supplier\": null,\r\n  \"SupplierSKU\": null,\r\n  \"Summary\": null,\r\n  \"Colors\": null,\r\n  \"Classes\": null,\r\n  \"ProductCustomEntries\": null,\r\n  \"TransactionType\": null,\r\n  \"WebOrderNumber\": null,\r\n  \"PurchaseOrderNumber\": null,\r\n  \"TransferOrderNumber\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Inventory/GetInventoryTransaction",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Inventory",
+								"GetInventoryTransaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Physical Inventory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"AllowInvalidUpcs\": null,\r\n  \"OrganizationId\": null,\r\n  \"ProductVariantInventoryLevels\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Inventory/SetPhysicalInventory",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Inventory",
+								"SetPhysicalInventory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Non Sellable",
+			"item": [
+				{
+					"name": "Get Non Sellable Batch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"NonSellableBatchId\": null,\r\n  \"BatchName\": null,\r\n  \"StoreCode\": null,\r\n  \"NonSellableBatchType\": null,\r\n  \"SupplierCode\": null,\r\n  \"SupplierName\": null,\r\n  \"RMANumber\": null,\r\n  \"Comment\": null,\r\n  \"Recipient\": null,\r\n  \"TotalValueMin\": null,\r\n  \"TotalValueMax\": null,\r\n  \"CreatedOnStart\": null,\r\n  \"CreatedOnEnd\": null,\r\n  \"CompletedOnStart\": null,\r\n  \"CompletedOnEnd\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/NonSellable/GetNonSellableBatch",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"NonSellable",
+								"GetNonSellableBatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Non Sellable Batch Details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"NonSellableBatchId\": null,\r\n  \"StoreCode\": null,\r\n  \"QuantityMin\": null,\r\n  \"QuantityMax\": null,\r\n  \"UnitValueMin\": null,\r\n  \"UnitValueMax\": null,\r\n  \"Memo\": null,\r\n  \"DateAddedStart\": null,\r\n  \"DateAddedEnd\": null,\r\n  \"BatchName\": null,\r\n  \"NonSellableBatchType\": null,\r\n  \"SupplierCode\": null,\r\n  \"SupplierName\": null,\r\n  \"SKU\": null,\r\n  \"Column\": null,\r\n  \"Row\": null,\r\n  \"Brand\": null,\r\n  \"ReturnDescription\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/NonSellable/GetNonSellableBatch",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"NonSellable",
+								"GetNonSellableBatch"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pos",
+			"item": [
+				{
+					"name": "Get POS Transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"BatchStartDate\": null,\r\n  \"BatchEndDate\": null,\r\n  \"SKU\": null,\r\n  \"Column\": null,\r\n  \"Row\": null,\r\n  \"Brand\": null,\r\n  \"UPC\": null,\r\n  \"Style\": null,\r\n  \"SupplierCode\": null,\r\n  \"Supplier\": null,\r\n  \"SupplierSKU\": null,\r\n  \"Summary\": null,\r\n  \"Colors\": null,\r\n  \"Classes\": null,\r\n  \"ProductCustomEntries\": null,\r\n  \"StoreCode\": null,\r\n  \"StoreState\": null,\r\n  \"TerminalDescription\": null,\r\n  \"CashierCode\": null,\r\n  \"CashierLogin\": null,\r\n  \"CashierUserName\": null,\r\n  \"TicketDateStart\": null,\r\n  \"TicketDateEnd\": null,\r\n  \"VoidedOnStart\": null,\r\n  \"VoidedOnEnd\": null,\r\n  \"ModifiedOnStart\": null,\r\n  \"ModifiedOnEnd\": null,\r\n  \"CreatedOnStart\": null,\r\n  \"CreatedOnEnd\": null,\r\n  \"SalesPersonCode\": null,\r\n  \"SalesPersonLogin\": null,\r\n  \"SalesPersonUserName\": null,\r\n  \"TicketNumber\": null,\r\n  \"TicketDiscountPercent\": null,\r\n  \"DiscountAmount\": null,\r\n  \"SaleType\": null,\r\n  \"ShipToZipCode\": null,\r\n  \"PromotionCode\": null,\r\n  \"TransactionType\": null,\r\n  \"CustomerId\": null,\r\n  \"AccountNumber\": null,\r\n  \"GiftCardNumber\": null,\r\n  \"CouponCode\": null,\r\n  \"ReturnDescription\": null,\r\n  \"ShipToCustomer\": null,\r\n  \"DiscountDescription\": null,\r\n  \"IsSellable\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/POS/GetPOSTransaction",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"POS",
+								"GetPOSTransaction"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Product Details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"UPC\": null,\r\n  \"Column\": null,\r\n  \"Row\": null,\r\n  \"SKU\": null,\r\n  \"Brand\": null,\r\n  \"Style\": null,\r\n  \"SupplierCode\": null,\r\n  \"Supplier\": null,\r\n  \"SupplierSKU\": null,\r\n  \"Summary\": null,\r\n  \"Colors\": null,\r\n  \"Classes\": null,\r\n  \"ProductCustomEntries\": null,\r\n  \"StoreCode\": null,\r\n  \"MinOnHand\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Product/GetProductDetails",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Product",
+								"GetProductDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SKU\": null,\r\n  \"Brand\": null,\r\n  \"Style\": null,\r\n  \"SupplierCode\": null,\r\n  \"Supplier\": null,\r\n  \"SupplierSKU\": null,\r\n  \"Summary\": null,\r\n  \"Colors\": null,\r\n  \"Classes\": null,\r\n  \"ProductCustomEntries\": null,\r\n  \"StoreCode\": null,\r\n  \"MinOnHand\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Product/GetProduct",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Product",
+								"GetProduct"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purchase Order",
+			"item": [
+				{
+					"name": "Get Purchase Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SKU\": null,\r\n  \"Column\": null,\r\n  \"Row\": null,\r\n  \"Brand\": null,\r\n  \"UPC\": null,\r\n  \"Style\": null,\r\n  \"SupplierCode\": null,\r\n  \"Supplier\": null,\r\n  \"SupplierSKU\": null,\r\n  \"Summary\": null,\r\n  \"Colors\": null,\r\n  \"Classes\": null,\r\n  \"ProductCustomEntries\": null,\r\n  \"PurchaseOrderNumber\": null,\r\n  \"BillToStoreCode\": null,\r\n  \"BillToStoreName\": null,\r\n  \"ShipToStoreCode\": null,\r\n  \"ShipToStoreName\": null,\r\n  \"ShipToCustomerAccountNumber\": null,\r\n  \"ConfirmationNumber\": null,\r\n  \"PurchaseOrderType\": null,\r\n  \"PurchaseOrderClosedStatus\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Discount/GetPurchaseOrder",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Discount",
+								"GetPurchaseOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Purchase Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"PurchaseOrderNumber\": null,\r\n  \"SupplierCode\": null,\r\n  \"BillToStoreCode\": null,\r\n  \"ShipToStoreCode\": null,\r\n  \"DiscountPercent\": null,\r\n  \"ConfirmationNumber\": null,\r\n  \"ShipVia\": null,\r\n  \"Terms\": null,\r\n  \"OrderDate\": null,\r\n  \"ShipDate\": null,\r\n  \"CancelDate\": null,\r\n  \"PaymentDate\": null,\r\n  \"Comment\": null,\r\n  \"AlertMessage\": null,\r\n  \"PurchaseOrderInformation\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/PurchaseOrder/SavePurchaseOrder",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"PurchaseOrder",
+								"SavePurchaseOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Receipt",
+			"item": [
+				{
+					"name": "Get Receipt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TicketNumber\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Receipt/GetReceipt",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Receipt",
+								"GetReceipt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Summary",
+			"item": [
+				{
+					"name": "Get Sales By Salesperson",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TicketDateStart\": null,\r\n  \"TicketDateEnd\": null,\r\n  \"SalespersonUsername\": null,\r\n  \"StoreCode\": null,\r\n  \"SortBy\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Summary/GetSalesBySalesperson",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Summary",
+								"GetSalesBySalesperson"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sales By SKU",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TicketDateStart\": null,\r\n  \"TicketDateEnd\": null,\r\n  \"SKU\": null,\r\n  \"SortBy\": null,\r\n  \"StoreCode\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Summary/GetSalesBySKU",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Summary",
+								"GetSalesBySKU"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sales By Store Code",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TicketDateStart\": null,\r\n  \"TicketDateEnd\": null,\r\n  \"SKU\": null,\r\n  \"SortBy\": null,\r\n  \"StoreCode\": null,\r\n  \"Skip\": null,\r\n  \"Take\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Summary/GetSalesBySKU",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Summary",
+								"GetSalesBySKU"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Sales By Time Of Day",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TicketDateStart\": null,\r\n  \"TicketDateEnd\": null,\r\n  \"StoreCode\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Summary/GetSalesByTimeOfDay",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Summary",
+								"GetSalesByTimeOfDay"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tags",
+			"item": [
+				{
+					"name": "Get Customer Tags",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomerIds\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Tags/GetCustomerTags",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Tags",
+								"GetCustomerTags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organization Tags",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{rics}}",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TagType\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://enterprise.ricssoftware.com/api/Tags/GetOrganizationTags",
+							"protocol": "https",
+							"host": [
+								"enterprise",
+								"ricssoftware",
+								"com"
+							],
+							"path": [
+								"api",
+								"Tags",
+								"GetOrganizationTags"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
